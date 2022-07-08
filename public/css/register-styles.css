@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #EAC926;
+    font-size: 12px;
+    font-weight: bold;
+    color: #03264C;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+header section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+
+.logo{
+    width: 50%;
+    padding: 2px;
+    margin: auto;
+}
+
+header form{
+    width: 50%;
+    height: 30%;
+   padding: 2px;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+}
+
+header form input{
+    border: 2px #03264C solid;
+    border-radius: 7%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+header p {
+    width: 100%;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+}
+
+nav{
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0%;
+}
+
+nav ul li a{
+    color: #03264C;
+    text-decoration: none;
+}
+
+.colapsed_menu{
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    padding: 1%;
+} 
+
+.colapsed_menu div{
+    color: white;
+    background-color: #1259c3;
+    font-size: 180%;
+    width: 9%;
+    text-align: center;
+    border: 2px #03264C solid;
+    border-radius: 15%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+
+@media (min-width: 369px) {
+    header section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header section p {
+        width: 100%;
+        align-self: center ;
+        text-align: center;
+    }
+    .search-bar{
+        align-self: center ;   
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .nav_bar{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .login_bar{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .colapsed_menu{
+        display: none;
+    } 
+}
+
+@media (min-width: 769px){
+    header section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header section p {
+        width: 100%;
+        align-self: center ;
+        text-align: center;
+    }
+    .search-bar{
+        width: 50%;
+        align-self: flex-start ; 
+        justify-content: center;  
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .nav_bar{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .login_bar{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .colapsed_menu{
+        display: none;
+    } 
+}

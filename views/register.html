@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width">
+    <link rel="stylesheet" href="/css/register-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/8004238602.js" crossorigin="anonymous"></script>
+    <title>Registro de Mi Primer Documento en HTML</title>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="/img/logo-mercado-liebre.svg" alt="Logo" class="logo">
+            <form class="search-bar">
+                <input type="text" placeholder="Buscar productos, marcas" name="search">
+                <button> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            </form>
+            <p> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        </section>
+        <nav>
+            <ul class="nav_bar">
+                <li><a href= "#ofertas">Ofertas</a></li>
+                <li><a href= "#">Tiendas Oficiales</a></li>
+                <li><a href= "#">Vender</a></li>
+                <li><a href= "#">Ayuda</a></li>
+            </ul>
+            <ul class="login_bar">
+                <li><a href= "#">Creá Tu Cuenta</a> <i class="fa-regular fa-address-card"></i> </li>
+                <li><a href= "#">Ingresá</a> <i class="fa-solid fa-arrow-right-to-bracket"></i> </li>
+                <li><a href= "#">Mis Compras</a> <i class="fa-solid fa-basket-shopping"></i> </li>
+            </ul>
+        </nav>
+        <div class= "colapsed_menu" >
+           <div class="button"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+    <form>
+        <div>
+            <label for="full_name">Nombre Completo: </label>
+            <input type="text" id="full_name" name="full_name" placeholder="Nombre y Apellido" required>
+        </div>
+        <div>
+            <label for="username" >Nombre de Usuario: </label>
+            <input type="text" id="username" name="username" placeholder="Usuario" required>
+        </div>
+        <div>
+            <label for="birthday">Fecha de Nacimiento</label>
+            <input type="date" id="birthday" name="birthday" required>
+        </div>
+        <div>
+            <label for="address">Domicilio:  </label>
+            <input type="text" id="address" name="user_address" placeholder="Dirección" required>
+        </div>
+        <div>
+            <label>Tipo de Usuario:</label>
+            <label><input type="radio" name="user_role" value="client" checked required> Comprador </label>
+            <label><input type="radio" name="user_role" value="reseller" required> Vendedor </label>
+        </div>
+        <div>
+            <label>Categorías de interés: </label>
+                <label for="cat_1">Electro</label>
+                    <input type="checkbox" name="cat_1" id="cat_1">
+                <label for="cat_2">Moda</label>
+                    <input type="checkbox" name="cat_2" id="cat_2">
+                <label for="cat_3">Hogar</label>
+                    <input type="checkbox" name="cat_3" id="cat_3">
+                <label for="cat_4">Jugetería</label>
+                    <input type="checkbox" name="cat_4" id="cat_4">
+                <label for="cat_5">Vida Sana</label>
+                     <input type="checkbox" name="cat_5" id="cat_5">
+        </div>
+        <button type="reset" name="reset">Borrar Info</button>
+        <button type="submit" name="register">Crear Cuenta</button>
+    </form>
+</body>
+</html>
